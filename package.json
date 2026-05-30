@@ -1,0 +1,41 @@
+{
+  "name": "megicula-stake",
+  "version": "1.0.0",
+  "description": "Megicula Stake - Decentralized Staking Protocol on OPN Testnet",
+  "author": "Megicula Stake Contributors",
+  "license": "MIT",
+  "scripts": {
+    "compile": "hardhat compile",
+    "test": "hardhat test",
+    "deploy:token": "hardhat run scripts/deploy-token.ts --network opnTestnet",
+    "deploy:staking": "hardhat run scripts/deploy-staking.ts --network opnTestnet",
+    "deploy:all": "hardhat run scripts/deploy-token.ts --network opnTestnet && hardhat run scripts/deploy-staking.ts --network opnTestnet",
+    "verify:token": "hardhat verify --network opnTestnet",
+    "verify:staking": "hardhat verify --network opnTestnet",
+    "clean": "hardhat clean",
+    "coverage": "hardhat coverage"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-chai-matchers": "^2.0.0",
+    "@nomicfoundation/hardhat-ethers": "^3.0.0",
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "@nomicfoundation/hardhat-verify": "^2.0.0",
+    "@typechain/ethers-v6": "^0.5.0",
+    "@typechain/hardhat": "^9.0.0",
+    "@types/chai": "^4.3.0",
+    "@types/mocha": "^10.0.0",
+    "@types/node": "^20.0.0",
+    "chai": "^4.3.0",
+    "ethers": "^6.13.0",
+    "hardhat": "^2.22.0",
+    "hardhat-gas-reporter": "^1.0.8",
+    "solidity-coverage": "^0.8.0",
+    "ts-node": "^10.9.0",
+    "typechain": "^8.3.0",
+    "typescript": "^5.5.0"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^5.1.0",
+    "dotenv": "^17.4.2"
+  }
+}

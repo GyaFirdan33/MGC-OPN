@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Megicula Stake | Secure Staking on OPN Chain</title>
+  <meta
+    name="description"
+    content="Megicula Stake is a decentralized staking protocol built on OPN Testnet allowing users to earn passive rewards securely."
+  />
+  <meta name="keywords" content="staking, DeFi, OPN, IOPn, blockchain, crypto, MEGA" />
+  <meta property="og:title" content="Megicula Stake" />
+  <meta property="og:description" content="Secure. Stake. Earn on OPN Chain." />
+  <meta property="og:type" content="website" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ════════════════════════════════════════════════════════
+       NAVBAR
+       ════════════════════════════════════════════════════════ -->
+  <nav class="navbar" id="navbar">
+    <div class="container nav-inner">
+      <a href="#" class="logo">
+        <span class="logo-icon">⚡</span>
+        <span class="logo-text">Megicula</span>
+      </a>
+      <div class="nav-links" id="navLinks">
+        <a href="#features">Features</a>
+        <a href="#how-it-works">How It Works</a>
+        <a href="#stats">Stats</a>
+        <a href="#contracts">Contracts</a>
+        <a href="#roadmap">Roadmap</a>
+        <a href="#faq">FAQ</a>
+      </div>
+      <div class="nav-actions">
+        <a href="https://github.com" target="_blank" rel="noopener" class="btn btn-ghost btn-sm">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          GitHub
+        </a>
+        <a href="#contracts" class="btn btn-primary btn-sm">Launch App</a>
+      </div>
+      <button class="mobile-toggle" id="mobileToggle" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ════════════════════════════════════════════════════════
+       HERO
+       ════════════════════════════════════════════════════════ -->
+  <section class="hero">
+    <div class="hero-glow"></div>
+    <div class="container hero-inner">
+      <div class="hero-badge animate-in">
+        <span class="badge-dot"></span>
+        Live on OPN Testnet
+      </div>
+      <h1 class="hero-title animate-in delay-1">
+        Stake Assets on<br />
+        <span class="text-gradient">OPN Chain</span>
+      </h1>
+      <p class="hero-subtitle animate-in delay-2">
+        Megicula Stake is a decentralized staking protocol built on OPN
+        Testnet allowing users to earn passive rewards securely.
+      </p>
+      <div class="hero-actions animate-in delay-3">
+        <a href="#contracts" class="btn btn-primary btn-lg">
+          Launch App
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <a href="https://github.com" target="_blank" rel="noopener" class="btn btn-outline btn-lg">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          View GitHub
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════════
+       PROJECT OVERVIEW
+       ════════════════════════════════════════════════════════ -->
+  <section class="section" id="overview">
+    <div class="container">
+      <div class="section-header animate-on-scroll">
+        <h2 class="section-title">Project Overview</h2>
+        <p class="section-desc">
+          A full-stack decentralized staking platform built for the IOPn ecosystem.
+        </p>
+      </div>
+      <div class="overview-grid animate-on-scroll">
+        <div class="overview-card">
+          <div class="overview-icon">🔗</div>
+          <h3>OPN Testnet</h3>
+          <p>Deployed on Chain ID 984 with fast, low-cost transactions.</p>
+        </div>
+        <div class="overview-card">
+          <div class="overview-icon">📜</div>
+          <h3>Smart Contracts</h3>
+          <p>Two Solidity 0.8.30 contracts using OpenZeppelin libraries.</p>
+        </div>
+        <div class="overview-card">
+          <div class="overview-icon">🌐</div>
+          <h3>Web3 Frontend</h3>
+          <p>Next.js 15 + Wagmi + RainbowKit + TailwindCSS + Framer Motion.</p>
+        </div>
+        <div class="overview-card">
+          <div class="overview-icon">🧪</div>
+          <h3>Fully Tested</h3>
+          <p>77 Hardhat tests covering every function and edge case.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════════
+       FEATURES
+       ════════════════════════════════════════════════════════ -->
+  <section class="section section-alt" id="features">
+    <div class="container">
+      <div class="section-header animate-on-scroll">
+        <h2 class="section-title">Why Megicula Stake?</h2>
+        <p class="section-desc">
+          Built with security, transparency, and user experience in mind.
+        </p>
+      </div>
+      <div class="features-grid animate-on-scroll">
+        <div class="feature-card">
+          <div class="feature-icon">🛡️</div>
+          <h3>Secure Smart Contracts</h3>
+          <p>Audited patterns with ReentrancyGuard, Pausable, SafeERC20, and Ownable from OpenZeppelin.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">📈</div>
+          <h3>Real-Time Rewards</h3>
+          <p>Rewards accumulate continuously based on staked amount and duration. Claim anytime.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🌍</div>
+          <h3>OPN Testnet Native</h3>
+          <p>Built specifically for the IOPn ecosystem. Fast transactions, low gas fees.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">💻</div>
+          <h3>Open Source</h3>
+          <p>Fully transparent codebase. Every line is on GitHub for community review.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════════
+       HOW IT WORKS
+       ════════════════════════════════════════════════════════ -->
+  <section class="section" id="how-it-works">
+    <div class="container">
+      <div class="section-header animate-on-scroll">
+        <h2 class="section-title">How It Works</h2>
+        <p class="section-desc">Start earning in four simple steps.</p>
+      </div>
+      <div class="steps-grid animate-on-scroll">
+        <div class="step-card">
+          <div class="step-number">1</div>
+          <div class="step-icon">👛</div>
+          <h3>Connect Wallet</h3>
+          <p>Link MetaMask or any EVM-compatible wallet to the OPN Testnet.</p>
+        </div>
+        <div class="step-arrow">→</div>
+        <div class="step-card">
+          <div class="step-number">2</div>
+          <div class="step-icon">🪙</div>
+          <h3>Stake Tokens</h3>
+          <p>Approve and deposit MEGA tokens into the staking contract.</p>
+        </div>
+        <div class="step-arrow">→</div>
+        <div class="step-card">
+          <div class="step-number">3</div>
+          <div class="step-icon">📈</div>
+          <h3>Earn Rewards</h3>
+          <p>Watch rewards grow in real time at 10% APY — no action needed.</p>
+        </div>
+        <div class="step-arrow">→</div>
+        <div class="step-card">
+          <div class="step-number">4</div>
+          <div class="step-icon">🎁</div>
+          <h3>Claim Anytime</h3>
+          <p>Withdraw rewards whenever you want. No lock-ups. No penalties.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════════
+       STATS
+       ════════════════════════════════════════════════════════ -->
+  <section class="section section-alt" id="stats">
+    <div class="container">
+      <div class="section-header animate-on-scroll">
+        <h2 class="section-title">Protocol Statistics</h2>
+        <p class="section-desc">Live data from the OPN Testnet.</p>
+      </div>
+      <div class="stats-grid animate-on-scroll">
+        <div class="stat-card">
+          <div class="stat-icon">📊</div>
+          <div class="stat-value" id="stat-tvl">—</div>
+          <div class="stat-label">Total Value Locked</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon">👥</div>
+          <div class="stat-value" id="stat-stakers">—</div>
+          <div class="stat-label">Total Stakers</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon">💰</div>
+          <div class="stat-value" id="stat-rewards">—</div>
+          <div class="stat-label">Rewards Distributed</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════════
+       CONTRACT ADDRESSES
+       ════════════════════════════════════════════════════════ -->
+  <section class="section" id="contracts">
+    <div class="container">
+      <div class="section-header animate-on-scroll">
+        <h2 class="section-title">Contract Addresses</h2>
+        <p class="section-desc">Verified and deployed on OPN Testnet.</p>
+      </div>
+      <div class="contracts-grid animate-on-scroll">
+        <div class="contract-card">
+          <div class="contract-header">
+            <span class="contract-badge">ERC20</span>
+            <h3>MegiculaToken (MEGA)</h3>
+          </div>
+          <div class="contract-address" id="token-address">
+            <code>Deploy to generate address</code>
+          </div>
+          <div class="contract-links">
+            <a href="https://testnet.opnscan.io" target="_blank" rel="noopener" class="btn btn-ghost btn-sm">
+              View on Explorer →
+            </a>
+          </div>
+        </div>
+        <div class="contract-card">
+          <div class="contract-header">
+            <span class="contract-badge contract-badge-accent">Staking</span>
+            <h3>MegiculaStaking</h3>
+          </div>
+          <div class="contract-address" id="staking-address">
+            <code>Deploy to generate address</code>
+          </div>
+          <div class="contract-links">
+            <a href="https://testnet.opnscan.io" target="_blank" rel="noopener" class="btn btn-ghost btn-sm">
+              View on Explorer →
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="network-info animate-on-scroll">
+        <h3>Network Configuration</h3>
+        <table class="network-table">
+          <tr><td>Network Name</td><td>OPN Testnet</td></tr>
+          <tr><td>Chain ID</td><td>984</td></tr>
+          <tr><td>RPC URL</td><td><code>https://testnet-rpc.iopn.tech</code></td></tr>
+          <tr><td>Block Explorer</td><td><a href="https://testnet.opnscan.io" target="_blank">testnet.opnscan.io</a></td></tr>
+          <tr><td>Native Token</td><td>OPN</td></tr>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════════
+       SCREENSHOTS
+       ════════════════════════════════════════════════════════ -->
+  <section class="section section-alt" id="screenshots">
+    <div class="container">
+      <div class="section-header animate-on-scroll">
+        <h2 class="section-title">Screenshots</h2>
+        <p class="section-desc">Preview of the Megicula Stake interface.</p>
+      </div>
+      <div class="screenshots-grid animate-on-scroll">
+        <div class="screenshot-placeholder">
+          <div class="placeholder-inner">
+            <span>🖥️</span>
+            <p>Landing Page</p>
+          </div>
+        </div>
+        <div class="screenshot-placeholder">
+          <div class="placeholder-inner">
+            <span>📊</span>
+            <p>Staking Dashboard</p>
+          </div>
+        </div>
+        <div class="screenshot-placeholder">
+          <div class="placeholder-inner">
+            <span>📱</span>
+            <p>Mobile View</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════════
+       TEAM
+       ════════════════════════════════════════════════════════ -->
+  <section class="section" id="team">
+    <div class="container">
+      <div class="section-header animate-on-scroll">
+        <h2 class="section-title">Team / Developer</h2>
+        <p class="section-desc">Built by contributors to the IOPn ecosystem.</p>
+      </div>
+      <div class="team-grid animate-on-scroll">
+        <div class="team-card">
+          <div class="team-avatar">⚡</div>
+          <h3>Megicula</h3>
+          <p class="team-role">Full-Stack Blockchain Engineer</p>
+          <p class="team-bio">
+            Smart contract development, frontend integration, and protocol design.
+            Passionate about building secure, user-friendly DeFi applications.
+          </p>
+          <div class="team-links">
+            <a href="https://github.com" target="_blank" rel="noopener">GitHub</a>
+            <a href="https://twitter.com" target="_blank" rel="noopener">Twitter</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════════
+       ROADMAP
+       ════════════════════════════════════════════════════════ -->
+  <section class="section section-alt" id="roadmap">
+    <div class="container">
+      <div class="section-header animate-on-scroll">
+        <h2 class="section-title">Roadmap</h2>
+        <p class="section-desc">What's next for Megicula Stake.</p>
+      </div>
+      <div class="roadmap-timeline animate-on-scroll">
+        <div class="roadmap-item completed">
+          <div class="roadmap-marker"></div>
+          <div class="roadmap-content">
+            <span class="roadmap-phase">Phase 1</span>
+            <h3>Testnet Launch</h3>
+            <ul>
+              <li>Deploy MEGA token contract</li>
+              <li>Deploy staking contract</li>
+              <li>Launch frontend on OPN Testnet</li>
+              <li>Open-source on GitHub</li>
+            </ul>
+          </div>
+        </div>
+        <div class="roadmap-item">
+          <div class="roadmap-marker"></div>
+          <div class="roadmap-content">
+            <span class="roadmap-phase">Phase 2</span>
+            <h3>Enhanced Features</h3>
+            <ul>
+              <li>Multiple staking pools</li>
+              <li>Tiered APY system</li>
+              <li>NFT staking integration</li>
+              <li>Referral rewards</li>
+            </ul>
+          </div>
+        </div>
+        <div class="roadmap-item">
+          <div class="roadmap-marker"></div>
+          <div class="roadmap-content">
+            <span class="roadmap-phase">Phase 3</span>
+            <h3>Mainnet & Governance</h3>
+            <ul>
+              <li>Mainnet deployment</li>
+              <li>DAO governance for APY votes</li>
+              <li>Multi-chain expansion</li>
+              <li>Security audit by firm</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════════
+       FAQ
+       ════════════════════════════════════════════════════════ -->
+  <section class="section" id="faq">
+    <div class="container">
+      <div class="section-header animate-on-scroll">
+        <h2 class="section-title">Frequently Asked Questions</h2>
+      </div>
+      <div class="faq-list animate-on-scroll">
+        <details class="faq-item">
+          <summary>What is Megicula Stake?</summary>
+          <p>Megicula Stake is a decentralized staking protocol built on OPN Testnet. Users stake MEGA tokens and earn continuous rewards at a configurable APY, currently set to 10%.</p>
+        </details>
+        <details class="faq-item">
+          <summary>How are rewards calculated?</summary>
+          <p>Rewards follow a continuous linear formula: <code>reward = stakedAmount × APY_bps × duration / (365 days × 10,000)</code>. There's no compounding — rewards accrue proportionally to staked amount and time.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Is there a lock-up period?</summary>
+          <p>No. You can unstake or claim rewards at any time. There is no minimum staking duration and no early withdrawal penalties.</p>
+        </details>
+        <details class="faq-item">
+          <summary>What is MEGA?</summary>
+          <p>MEGA (Megicula Token) is the ERC20 token used for staking. Total supply is 100,000,000 MEGA. It follows the standard ERC20 interface and is also burnable.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Is the code audited?</summary>
+          <p>The contracts use OpenZeppelin battle-tested libraries (ReentrancyGuard, Pausable, SafeERC20, Ownable). The full codebase is open-source and available on GitHub for community review. Formal audit is on the roadmap.</p>
+        </details>
+        <details class="faq-item">
+          <summary>What network do I need?</summary>
+          <p>Add OPN Testnet to your wallet: Chain ID 984, RPC URL https://testnet-rpc.iopn.tech, Currency symbol OPN.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════════
+       CONTACT
+       ════════════════════════════════════════════════════════ -->
+  <section class="section section-alt" id="contact">
+    <div class="container">
+      <div class="section-header animate-on-scroll">
+        <h2 class="section-title">Get In Touch</h2>
+        <p class="section-desc">
+          Questions, feedback, or want to contribute?
+        </p>
+      </div>
+      <div class="contact-links animate-on-scroll">
+        <a href="https://github.com" target="_blank" rel="noopener" class="contact-card">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          <span>GitHub</span>
+        </a>
+        <a href="https://twitter.com" target="_blank" rel="noopener" class="contact-card">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+          <span>Twitter</span>
+        </a>
+        <a href="https://testnet.opnscan.io" target="_blank" rel="noopener" class="contact-card">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+          <span>OPN Explorer</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════════
+       FOOTER
+       ════════════════════════════════════════════════════════ -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-logo">
+        <span class="logo-icon">⚡</span>
+        <span class="logo-text">Megicula Stake</span>
+      </div>
+      <p class="footer-tagline">Secure. Stake. Earn on OPN Chain.</p>
+      <div class="footer-links">
+        <a href="https://github.com" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://testnet.opnscan.io" target="_blank" rel="noopener">Explorer</a>
+        <a href="https://testnet-rpc.iopn.tech" target="_blank" rel="noopener">RPC</a>
+      </div>
+      <p class="footer-copy">&copy; 2026 Megicula Stake. Built for the IOPn ecosystem.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
