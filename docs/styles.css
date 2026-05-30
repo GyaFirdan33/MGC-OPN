@@ -426,6 +426,79 @@ code { font-family: "JetBrains Mono", "Fira Code", monospace; font-size: 0.85em;
 }
 .contract-address code { background: none; padding: 0; }
 .contract-links { display: flex; gap: 0.75rem; }
+.contract-address-row {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: rgba(0,0,0,0.3);
+  border-radius: var(--radius);
+  padding: 0.75rem 1rem;
+  margin-bottom: 1rem;
+}
+.contract-addr-text {
+  flex: 1;
+  font-size: 0.8rem;
+  word-break: break-all;
+  background: none;
+  padding: 0;
+  color: var(--primary);
+}
+.btn-copy {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  border: 1px solid rgba(168,85,247,0.25);
+  border-radius: var(--radius);
+  background: rgba(168,85,247,0.08);
+  color: var(--primary);
+  cursor: pointer;
+  transition: all var(--transition);
+  flex-shrink: 0;
+}
+.btn-copy:hover {
+  background: rgba(168,85,247,0.2);
+  border-color: var(--primary);
+}
+
+/* ── Deployment Status ────────────────────────────────────── */
+.deployment-status {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-xl);
+  padding: 1.75rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+.deployment-status h3 { font-size: 1.1rem; font-weight: 700; margin-bottom: 1.25rem; }
+.status-list {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.status-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--fg-muted);
+}
+.status-live { color: var(--green); }
+.status-check {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  background: rgba(34,197,94,0.15);
+  color: var(--green);
+  font-size: 0.75rem;
+  font-weight: 800;
+}
 
 .network-info {
   background: var(--bg-card);
@@ -696,4 +769,79 @@ code { font-family: "JetBrains Mono", "Fira Code", monospace; font-size: 0.85em;
   .section-title { font-size: 1.75rem; }
   .stats-grid { grid-template-columns: 1fr; }
   .contracts-grid { grid-template-columns: 1fr; }
+  .status-list { flex-direction: column; align-items: center; gap: 0.75rem; }
+  .submission-value-row { flex-direction: column; align-items: flex-start; }
+  .submission-info-grid { grid-template-columns: 1fr; }
+}
+
+/* ── Submission Info ──────────────────────────────────────── */
+.submission-grid {
+  max-width: 720px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.submission-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-xl);
+  padding: 1.5rem;
+  transition: all var(--transition);
+}
+.submission-card:hover {
+  border-color: rgba(168,85,247,0.25);
+  box-shadow: var(--shadow-glow);
+}
+.submission-label {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--fg-muted);
+  margin-bottom: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+.submission-value-row {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+.submission-addr {
+  flex: 1;
+  font-size: 0.85rem;
+  word-break: break-all;
+  background: rgba(168,85,247,0.1);
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+}
+.submission-info-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-xl);
+  padding: 1.5rem;
+}
+.submission-info-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+.submission-info-label {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--fg-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+.submission-info-value {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--fg);
+}
+.submission-link {
+  color: var(--primary) !important;
+  text-decoration: underline;
 }

@@ -34,6 +34,7 @@
         <a href="#how-it-works">How It Works</a>
         <a href="#stats">Stats</a>
         <a href="#contracts">Contracts</a>
+        <a href="#submission">Submission</a>
         <a href="#roadmap">Roadmap</a>
         <a href="#faq">FAQ</a>
       </div>
@@ -238,12 +239,15 @@
             <span class="contract-badge">ERC20</span>
             <h3>MegiculaToken (MEGA)</h3>
           </div>
-          <div class="contract-address" id="token-address">
-            <code>Deploy to generate address</code>
+          <div class="contract-address-row">
+            <code class="contract-addr-text">0x8012c673D5cb57522Fe8f97AB1f9b93A54359a67</code>
+            <button class="btn-copy" onclick="copyToClipboard('0x8012c673D5cb57522Fe8f97AB1f9b93A54359a67')" title="Copy address">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+            </button>
           </div>
           <div class="contract-links">
-            <a href="https://testnet.opnscan.io" target="_blank" rel="noopener" class="btn btn-ghost btn-sm">
-              View on Explorer →
+            <a href="https://testnet.iopn.tech/token/0x8012c673D5cb57522Fe8f97AB1f9b93A54359a67" target="_blank" rel="noopener" class="btn btn-ghost btn-sm">
+              View Token →
             </a>
           </div>
         </div>
@@ -252,14 +256,26 @@
             <span class="contract-badge contract-badge-accent">Staking</span>
             <h3>MegiculaStaking</h3>
           </div>
-          <div class="contract-address" id="staking-address">
-            <code>Deploy to generate address</code>
+          <div class="contract-address-row">
+            <code class="contract-addr-text">0x6699A1022e6caC639247446206eDFe0ae545710e</code>
+            <button class="btn-copy" onclick="copyToClipboard('0x6699A1022e6caC639247446206eDFe0ae545710e')" title="Copy address">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+            </button>
           </div>
           <div class="contract-links">
-            <a href="https://testnet.opnscan.io" target="_blank" rel="noopener" class="btn btn-ghost btn-sm">
-              View on Explorer →
+            <a href="https://testnet.iopn.tech/address/0x6699A1022e6caC639247446206eDFe0ae545710e" target="_blank" rel="noopener" class="btn btn-ghost btn-sm">
+              View Staking →
             </a>
           </div>
+        </div>
+      </div>
+
+      <div class="deployment-status animate-on-scroll">
+        <h3>Deployment Status</h3>
+        <div class="status-list">
+          <span class="status-item status-live"><span class="status-check">✓</span> Contracts Deployed</span>
+          <span class="status-item status-live"><span class="status-check">✓</span> Contracts Verified</span>
+          <span class="status-item status-live"><span class="status-check">✓</span> GitHub Pages Live</span>
         </div>
       </div>
 
@@ -269,9 +285,61 @@
           <tr><td>Network Name</td><td>OPN Testnet</td></tr>
           <tr><td>Chain ID</td><td>984</td></tr>
           <tr><td>RPC URL</td><td><code>https://testnet-rpc.iopn.tech</code></td></tr>
-          <tr><td>Block Explorer</td><td><a href="https://testnet.opnscan.io" target="_blank">testnet.opnscan.io</a></td></tr>
+          <tr><td>Block Explorer</td><td><a href="https://testnet.iopn.tech" target="_blank">testnet.iopn.tech</a></td></tr>
           <tr><td>Native Token</td><td>OPN</td></tr>
         </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════════
+       SUBMISSION INFORMATION
+       ════════════════════════════════════════════════════════ -->
+  <section class="section section-alt" id="submission">
+    <div class="container">
+      <div class="section-header animate-on-scroll">
+        <h2 class="section-title">Submission Information</h2>
+        <p class="section-desc">Official deployment details for IOPn ecosystem verification.</p>
+      </div>
+      <div class="submission-grid animate-on-scroll">
+        <div class="submission-card">
+          <div class="submission-label">Token Address (MegiculaToken)</div>
+          <div class="submission-value-row">
+            <code class="submission-addr">0x8012c673D5cb57522Fe8f97AB1f9b93A54359a67</code>
+            <button class="btn-copy" onclick="copyToClipboard('0x8012c673D5cb57522Fe8f97AB1f9b93A54359a67')" title="Copy">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+            </button>
+            <a href="https://testnet.iopn.tech/token/0x8012c673D5cb57522Fe8f97AB1f9b93A54359a67" target="_blank" rel="noopener" class="btn btn-ghost btn-sm">View →</a>
+          </div>
+        </div>
+        <div class="submission-card">
+          <div class="submission-label">Staking Address (MegiculaStaking)</div>
+          <div class="submission-value-row">
+            <code class="submission-addr">0x6699A1022e6caC639247446206eDFe0ae545710e</code>
+            <button class="btn-copy" onclick="copyToClipboard('0x6699A1022e6caC639247446206eDFe0ae545710e')" title="Copy">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+            </button>
+            <a href="https://testnet.iopn.tech/address/0x6699A1022e6caC639247446206eDFe0ae545710e" target="_blank" rel="noopener" class="btn btn-ghost btn-sm">View →</a>
+          </div>
+        </div>
+        <div class="submission-info-grid">
+          <div class="submission-info-item">
+            <span class="submission-info-label">Chain ID</span>
+            <span class="submission-info-value">984</span>
+          </div>
+          <div class="submission-info-item">
+            <span class="submission-info-label">Network</span>
+            <span class="submission-info-value">OPN Testnet</span>
+          </div>
+          <div class="submission-info-item">
+            <span class="submission-info-label">RPC</span>
+            <code class="submission-info-value">https://testnet-rpc.iopn.tech</code>
+          </div>
+          <div class="submission-info-item">
+            <span class="submission-info-label">Explorer</span>
+            <a href="https://testnet.iopn.tech" target="_blank" rel="noopener" class="submission-info-value submission-link">https://testnet.iopn.tech</a>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -445,7 +513,7 @@
           <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
           <span>Twitter</span>
         </a>
-        <a href="https://testnet.opnscan.io" target="_blank" rel="noopener" class="contact-card">
+        <a href="https://testnet.iopn.tech" target="_blank" rel="noopener" class="contact-card">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
           <span>OPN Explorer</span>
         </a>
@@ -465,7 +533,7 @@
       <p class="footer-tagline">Secure. Stake. Earn on OPN Chain.</p>
       <div class="footer-links">
         <a href="https://github.com" target="_blank" rel="noopener">GitHub</a>
-        <a href="https://testnet.opnscan.io" target="_blank" rel="noopener">Explorer</a>
+        <a href="https://testnet.iopn.tech" target="_blank" rel="noopener">Explorer</a>
         <a href="https://testnet-rpc.iopn.tech" target="_blank" rel="noopener">RPC</a>
       </div>
       <p class="footer-copy">&copy; 2026 Megicula Stake. Built for the IOPn ecosystem.</p>

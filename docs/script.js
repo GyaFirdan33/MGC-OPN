@@ -76,11 +76,11 @@
   // ── Contract address placeholders ────────────────────────
   // After deploying, replace these with real addresses:
   var CONTRACTS = {
-    token: "0x0000000000000000000000000000000000000000",
-    staking: "0x0000000000000000000000000000000000000000",
+    token: "0x8012c673D5cb57522Fe8f97AB1f9b93A54359a67",
+    staking: "0x6699A1022e6caC639247446206eDFe0ae545710e",
   };
 
-  var EXPLORER = "https://testnet.opnscan.io";
+  var EXPLORER = "https://testnet.iopn.tech";
 
   function updateContractUI() {
     var tokenEl = document.getElementById("token-address");
@@ -88,7 +88,7 @@
 
     if (tokenEl && CONTRACTS.token !== "0x0000000000000000000000000000000000000000") {
       tokenEl.innerHTML =
-        '<a href="' + EXPLORER + "/address/" + CONTRACTS.token + '" target="_blank" rel="noopener" style="color:#a855f7;">' +
+        '<a href="' + EXPLORER + "/token/" + CONTRACTS.token + '" target="_blank" rel="noopener" style="color:#a855f7;">' +
         CONTRACTS.token + "</a>";
     }
     if (stakingEl && CONTRACTS.staking !== "0x0000000000000000000000000000000000000000") {
